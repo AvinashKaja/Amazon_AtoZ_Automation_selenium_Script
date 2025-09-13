@@ -30,13 +30,13 @@ public class AmazonTest {
 
         WebElement phonenumber = waiting.until(ExpectedConditions.visibilityOfElementLocated(By.id("ap_email_login")));
         
-        phonenumber.sendKeys("0000000000");//using logging valid phone number
+        phonenumber.sendKeys("0000000000");//using loggin valid phone number
         
         driver.findElement(By.id("continue")).click();
 
         WebElement pass = waiting.until(ExpectedConditions.visibilityOfElementLocated(By.name("password")));
         
-        pass.sendKeys("xxxxxxxx");//using valid logging password
+        pass.sendKeys("xxxxxxxx");//using valid loggin password
         
         driver.findElement(By.id("signInSubmit")).click();
 
@@ -95,6 +95,7 @@ public class AmazonTest {
       	
             }
 }
+
 
 
 
